@@ -1,0 +1,85 @@
+## functions
+export(
+
+AICc,
+akaike.weights,
+calib,
+Cy0,
+eff,
+efficiency,
+expcomp,
+expfit,
+evidence,
+fitchisq,
+getPar,
+is.outlier,
+KOD,
+llratio,
+LOF.test,
+LRE,
+maxRatio,
+meltcurve,
+midpoint,
+modlist,
+mselect,
+parKOD,
+pcrbatch,
+pcrboot,
+pcrfit,
+pcrGOF,
+pcrimport,
+pcrimport2,
+pcropt1,
+pcrsim,
+PRESS,
+propagate,
+qpcR.news,
+ratiobatch,
+ratiocalc,
+ratioPar,
+refmean,
+replist,
+resplot,
+resVar,
+RMSE,
+Rsq,
+Rsq.ad,
+RSS,
+sliwin,
+takeoff
+)
+
+importFrom("MASS", mvrnorm)
+importFrom("minpack.lm", nlsLM, nls.lm.control)
+importFrom("rgl", plot3d, points3d, axis3d, mtext3d, lines3d)
+importFrom("robustbase", covMcd)
+importFrom("Matrix", nearPD)
+importFrom("grDevices", "heat.colors", "rainbow")
+importFrom("graphics", "abline", "arrows", "axTicks", "axis",
+           "barplot", "boxplot", "hist", "image", "legend", "lines",
+           "mtext", "par", "plot", "points", "rug", "segments",
+           "symbols", "text")
+importFrom("methods", "cbind2", "rbind2")
+importFrom("stats", "AIC", "BIC", "D", "anova", "arima", "as.formula",
+           "coef", "complete.cases", "convolve", "cov", "deriv",
+           "df.residual", "embed", "filter", "fitted", "formula",
+            "integrate", "lm", "logLik", "lowess", "mad", "mahalanobis",
+            "median", "na.exclude", "na.omit", "pchisq", "pnorm",
+            "predict", "princomp", "pt", "qchisq", "qnorm", "qt",
+            "quantile", "residuals", "rnorm", "rstudent", "sd",
+            "smooth.spline", "splinefun", "supsmu", "update", "vcov")
+importFrom("utils", "View", "flush.console", "head", "modifyList",
+           "read.delim", "stack", "tail", "write.table")
+
+
+## S3 methods
+S3method(update, pcrfit)
+S3method(predict, pcrfit)
+S3method(plot, pcrfit)
+
+useDynLib(qpcR, .registration = TRUE)
+
+
+
+
+
