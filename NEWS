@@ -1,3 +1,12 @@
+qpcR 1.4 - 2 (09-08-2024)
+Changes and bug-fixes in functions:
+  Corrected pcrbatch 'if' with condition length>1. 
+  CHANGES IN R 4.2.0:
+  SIGNIFICANT USER-VISIBLE CHANGES:
+    * Calling if() or while() with a condition of length greater than
+      one gives an error rather than a warning.  Consequently,
+      environment variable _R_CHECK_LENGTH_1_CONDITION_ no longer has
+      any effect.
 qpcR 1.4 - 1 (29-05-2018)
 Changes and bug-fixes in functions:
   * removed a bug in 'plot.pcrfit' that would display an additional line in the graph when setting type = "l".

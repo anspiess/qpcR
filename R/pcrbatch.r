@@ -30,7 +30,7 @@ verbose = TRUE,
   if (!is.numeric(baseline)) baseline <- match.arg(baseline)  
       
   ## make initial 'modlist'
-  if (class(x) != "modlist") {  
+  if (class(x)[1] != "modlist") {  
     if (names(x)[cyc] != "Cycles") stop("Column 1 should be named 'Cycles'!")
     modLIST <- try(modlist(x = x, cyc = cyc, fluo = fluo, model = model, check = check, checkPAR = checkPAR,
                            remove = remove, exclude = exclude, labels = labels, norm = norm, baseline = baseline,
